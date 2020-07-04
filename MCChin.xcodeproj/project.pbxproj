@@ -52,6 +52,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63F521AC24B1487500314951 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63F521AD24B1488300314951 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63F521AE24B1488A00314951 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		63FDD79E2450F6780073AAE5 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +94,9 @@
 		63FDD7A92450F6780073AAE5 /* MCChin */ = {
 			isa = PBXGroup;
 			children = (
+				63F521AE24B1488A00314951 /* Controller */,
+				63F521AD24B1488300314951 /* View */,
+				63F521AC24B1487500314951 /* Model */,
 				63FDD7AA2450F6780073AAE5 /* AppDelegate.swift */,
 				63FDD7AC2450F6780073AAE5 /* SceneDelegate.swift */,
 				63FDD7AE2450F6780073AAE5 /* ViewController.swift */,
