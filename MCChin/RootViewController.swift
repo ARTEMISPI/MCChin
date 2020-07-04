@@ -1,14 +1,14 @@
 //
-//  MunchkinViewController.swift
+//  RootViewController.swift
 //  MCChin
 //
-//  Created by Artemis Papunidis on 6/19/20.
+//  Created by Artemis Papunidis on 7/5/20.
 //  Copyright © 2020 PAPUNIDIS DEVELOPMENT. All rights reserved.
 //
 
 import UIKit
 
-class MunchkinViewController: UIViewController {
+class RootViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
