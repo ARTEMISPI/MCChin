@@ -9,8 +9,12 @@
 import Foundation
 import RealmSwift
 
-var Players: [String] = [""]
+class Model {
+    var Players: [String] = [""]
+
+   
+}
 
 //try! realm.write {
-//    Realm.add(Players)
-//}
+//       Realm.add(Players)
+//   }
