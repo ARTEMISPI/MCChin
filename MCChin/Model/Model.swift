@@ -10,3 +10,7 @@ import Foundation
 import RealmSwift
 
 var Players: [String] = [""]
+
+//try! realm.write {
+//    Realm.add(Players)
+//}

@@ -55,6 +55,7 @@
 		63F521AC24B1487500314951 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63A18F2224B1420000572A87 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -69,8 +70,32 @@
 		63F521AE24B1488A00314951 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				63FDD7AE2450F6780073AAE5 /* ViewController.swift */,
+				6340A295249D393F0082C99B /* MunchkinViewController.swift */,
+				63A18F2024B141F000572A87 /* MonopolyViewController.swift */,
+				63A18F2424B142AA00572A87 /* MafiaViewController.swift */,
+				63A18F2624B1431300572A87 /* RootViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		63F521B024B2318D00314951 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63FDD7AA2450F6780073AAE5 /* AppDelegate.swift */,
+				63FDD7AC2450F6780073AAE5 /* SceneDelegate.swift */,
+				63FDD7B32450F67D0073AAE5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		63F521B124B2322000314951 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				63FDD7B02450F6780073AAE5 /* Main.storyboard */,
+				63FDD7B52450F67D0073AAE5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		63FDD79E2450F6780073AAE5 = {
@@ -94,21 +119,12 @@
 		63FDD7A92450F6780073AAE5 /* MCChin */ = {
 			isa = PBXGroup;
 			children = (
+				63F521B124B2322000314951 /* Storyboard */,
+				63F521B024B2318D00314951 /* Resources */,
 				63F521AE24B1488A00314951 /* Controller */,
 				63F521AD24B1488300314951 /* View */,
 				63F521AC24B1487500314951 /* Model */,
-				63FDD7AA2450F6780073AAE5 /* AppDelegate.swift */,
-				63FDD7AC2450F6780073AAE5 /* SceneDelegate.swift */,
-				63FDD7AE2450F6780073AAE5 /* ViewController.swift */,
-				6340A295249D393F0082C99B /* MunchkinViewController.swift */,
-				63A18F2024B141F000572A87 /* MonopolyViewController.swift */,
-				63A18F2424B142AA00572A87 /* MafiaViewController.swift */,
-				63A18F2624B1431300572A87 /* RootViewController.swift */,
-				63FDD7B32450F67D0073AAE5 /* Assets.xcassets */,
-				63FDD7B02450F6780073AAE5 /* Main.storyboard */,
-				63FDD7B52450F67D0073AAE5 /* LaunchScreen.storyboard */,
 				63FDD7B82450F67D0073AAE5 /* Info.plist */,
-				63A18F2224B1420000572A87 /* Model.swift */,
 			);
 			path = MCChin;
 			sourceTree = "<group>";
@@ -398,7 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R3M5YPWPF7;
 				INFOPLIST_FILE = MCChin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -419,7 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R3M5YPWPF7;
 				INFOPLIST_FILE = MCChin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
