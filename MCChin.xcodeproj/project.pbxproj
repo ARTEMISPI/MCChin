@@ -10,7 +10,7 @@
 		55934744A53933992DCA7DE2 /* Pods_MCChin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60976229BFFE43FF96380230 /* Pods_MCChin.framework */; };
 		6340A296249D393F0082C99B /* MunchkinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340A295249D393F0082C99B /* MunchkinViewController.swift */; };
 		63A18F2124B141F000572A87 /* MonopolyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A18F2024B141F000572A87 /* MonopolyViewController.swift */; };
-		63A18F2324B1420000572A87 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A18F2224B1420000572A87 /* Model.swift */; };
+		63A18F2324B1420000572A87 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A18F2224B1420000572A87 /* Database.swift */; };
 		63A18F2524B142AA00572A87 /* MafiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A18F2424B142AA00572A87 /* MafiaViewController.swift */; };
 		63A18F2724B1431300572A87 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A18F2624B1431300572A87 /* RootViewController.swift */; };
 		63FDD7AB2450F6780073AAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD7AA2450F6780073AAE5 /* AppDelegate.swift */; };
@@ -26,7 +26,7 @@
 		60976229BFFE43FF96380230 /* Pods_MCChin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCChin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6340A295249D393F0082C99B /* MunchkinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunchkinViewController.swift; sourceTree = "<group>"; };
 		63A18F2024B141F000572A87 /* MonopolyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonopolyViewController.swift; sourceTree = "<group>"; };
-		63A18F2224B1420000572A87 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		63A18F2224B1420000572A87 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		63A18F2424B142AA00572A87 /* MafiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MafiaViewController.swift; sourceTree = "<group>"; };
 		63A18F2624B1431300572A87 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		63FDD7A72450F6780073AAE5 /* MCChin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCChin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +55,7 @@
 		63F521AC24B1487500314951 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				63A18F2224B1420000572A87 /* Model.swift */,
+				63A18F2224B1420000572A87 /* Database.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,7 +264,7 @@
 				63FDD7AF2450F6780073AAE5 /* ViewController.swift in Sources */,
 				63FDD7AB2450F6780073AAE5 /* AppDelegate.swift in Sources */,
 				63FDD7AD2450F6780073AAE5 /* SceneDelegate.swift in Sources */,
-				63A18F2324B1420000572A87 /* Model.swift in Sources */,
+				63A18F2324B1420000572A87 /* Database.swift in Sources */,
 				6340A296249D393F0082C99B /* MunchkinViewController.swift in Sources */,
 				63A18F2524B142AA00572A87 /* MafiaViewController.swift in Sources */,
 				63A18F2724B1431300572A87 /* RootViewController.swift in Sources */,
