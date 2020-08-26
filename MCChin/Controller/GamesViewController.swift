@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GamesViewController.swift
 //  MCChin
 //
 //  Created by Artemis Papunidis on 4/23/20.
@@ -10,13 +10,15 @@ import UIKit
 
 class GamesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var gamesTableView: UITableView!
+    
     //MARK: INITIALIZATION
     override func viewDidLoad() {
            super.viewDidLoad()
         
        }
-    
-    var gamesVariables: [String] = [""]
+
+    var gamesVariables: [String] = ["Munchkin, Monopoly, Mafia"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return gamesVariables.count
@@ -28,10 +30,23 @@ class GamesViewController: UIViewController, UITableViewDataSource, UITableViewD
         return gamesCell
     }
     
-    //MARK: CONNECTIONS
+    // Сохранение данных
+    func saveData (){
+    UserDefaults.standard.set(gamesVariables, forKey: "DPKey")
+    UserDefaults.standard.synchronize()
+    }
+
+
+    // Загрузка данных
+    func loadData(){
+    if let array = UserDefaults.standard.array(forKey: "DPKey") as? [String] {
+        gamesVariables = array
+    } else {
+        gamesVariables = []
+    }
     
-    @IBOutlet weak var gamesTableView: UITableView!
+    //MARK: CONNECTIONS
     
 
 }
-
+}

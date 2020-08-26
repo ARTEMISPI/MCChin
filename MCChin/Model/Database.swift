@@ -9,11 +9,11 @@
 import Foundation
 import RealmSwift
 
-class Players {
-    var Players: [String] = [""]
-
-   
-}
+//class Players {
+//    var Players: [String] = [""]
+//
+//
+//}
 
 //try! realm.write {
 //       Realm.add(Players)
