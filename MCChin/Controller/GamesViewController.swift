@@ -18,7 +18,7 @@ class GamesViewController: UIViewController, UITableViewDataSource, UITableViewD
         
        }
 
-    var gamesVariables: [String] = ["Munchkin, Monopoly, Mafia"]
+//    var gamesVariables: [String] = ["Munchkin, Monopoly, Mafia"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return gamesVariables.count
