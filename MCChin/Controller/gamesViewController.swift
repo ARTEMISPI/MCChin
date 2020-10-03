@@ -17,35 +17,36 @@ class gamesViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     @IBOutlet weak var gamesTableView: UITableView!
     
-//    var gamesVariables: [String] = ["Munchkin, Monopoly, Mafia"]
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return 3
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return gamesVariables.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let gamesCell = tableView.dequeueReusableCell(withIdentifier: "gamesVar", for: indexPath)
+        let gamesCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         gamesCell.textLabel?.text = gamesVariables[indexPath.row]
         return gamesCell
     }
     
     // Сохранение данных
-    func saveData (){
-    UserDefaults.standard.set(gamesVariables, forKey: "DPKey")
-    UserDefaults.standard.synchronize()
-    }
+//    func saveData (){
+//    UserDefaults.standard.set(gamesVariables, forKey: "DPKey")
+//    UserDefaults.standard.synchronize()
+//    }
 
 
     // Загрузка данных
-    func loadData(){
-    if let array = UserDefaults.standard.array(forKey: "DPKey") as? [String] {
-        gamesVariables = array
-    } else {
-        gamesVariables = []
-    }
+//    func loadData(){
+//    if let array = UserDefaults.standard.array(forKey: "DPKey") as? [String] {
+//        gamesVariables = array
+//    } else {
+//        gamesVariables = []
+//    }
+//    }
     
     //MARK: CONNECTIONS
     
-
-}
 }

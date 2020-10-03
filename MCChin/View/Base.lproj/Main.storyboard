@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FWZ-ds-BSz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LMW-Te-yie">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -21,10 +21,10 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="gamesCell" rowHeight="50" id="sgT-73-vbT" customClass="gamesTableViewCell" customModule="MCChin" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="gamesVar" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="50" id="sgT-73-vbT">
                                         <rect key="frame" x="0.0" y="28" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="mun" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sgT-73-vbT" id="f4Q-nP-OUy">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sgT-73-vbT" id="f4Q-nP-OUy">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -57,11 +57,12 @@
                                                 <constraint firstItem="cYq-3P-cnM" firstAttribute="leading" secondItem="Mgd-dv-1w1" secondAttribute="trailing" constant="8" id="vLK-Qb-ffy"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="gamesVar"/>
                                         <connections>
                                             <outlet property="gamesMunchkinPhoto" destination="Mgd-dv-1w1" id="oYK-hd-pPj"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="monopolyCell" rowHeight="50" id="uiZ-NF-ora" customClass="gamesTableViewCell" customModule="MCChin" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="monCell" rowHeight="50" id="uiZ-NF-ora">
                                         <rect key="frame" x="0.0" y="78" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uiZ-NF-ora" id="Qs3-XC-0kh">
@@ -97,7 +98,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mafiaCell" rowHeight="50" id="fbh-ic-D36" customClass="gamesTableViewCell" customModule="MCChin" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mafCell" rowHeight="50" id="fbh-ic-D36">
                                         <rect key="frame" x="0.0" y="128" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fbh-ic-D36" id="hBl-rh-A6Q">
@@ -134,6 +135,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <sections/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rzq-T5-yiE"/>
@@ -302,6 +304,99 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5N-NR-eJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-336" y="167"/>
+        </scene>
+        <!--Games-->
+        <scene sceneID="cSz-rO-4YQ">
+            <objects>
+                <viewController id="D1A-XN-gxR" customClass="gamesViewController" customModule="MCChin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FYG-KK-NRb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VxF-uV-M6w">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="gamesVar" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="50" id="EbD-Ue-iFu" customClass="gamesTableViewCell" customModule="MCChin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EbD-Ue-iFu" id="KQF-qr-Xeq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="munchkinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="jAi-Zn-gh3">
+                                                    <rect key="frame" x="20" y="4" width="52" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="52" id="sYw-14-SOm"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKb-kS-Sw2">
+                                                    <rect key="frame" x="80" y="4" width="160" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="160" id="XCx-a2-Bm5"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Munchkin">
+                                                        <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="gamesMunchkinButton:" destination="EbD-Ue-iFu" eventType="touchUpInside" id="wir-eC-xff"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZKb-kS-Sw2" firstAttribute="top" secondItem="jAi-Zn-gh3" secondAttribute="top" id="M5z-a4-Lwy"/>
+                                                <constraint firstItem="jAi-Zn-gh3" firstAttribute="top" secondItem="KQF-qr-Xeq" secondAttribute="topMargin" constant="-7" id="Qae-7l-jT2"/>
+                                                <constraint firstItem="ZKb-kS-Sw2" firstAttribute="bottom" secondItem="jAi-Zn-gh3" secondAttribute="bottom" id="ZmM-0r-GfT"/>
+                                                <constraint firstItem="jAi-Zn-gh3" firstAttribute="centerY" secondItem="KQF-qr-Xeq" secondAttribute="centerY" id="nB4-Pb-1EZ"/>
+                                                <constraint firstItem="jAi-Zn-gh3" firstAttribute="leading" secondItem="KQF-qr-Xeq" secondAttribute="leadingMargin" id="rhu-yZ-UPl"/>
+                                                <constraint firstItem="ZKb-kS-Sw2" firstAttribute="leading" secondItem="jAi-Zn-gh3" secondAttribute="trailing" constant="8" id="xEI-lK-AM2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="gamesVar"/>
+                                        <connections>
+                                            <outlet property="gamesMunchkinPhoto" destination="jAi-Zn-gh3" id="Hah-qV-6cA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2i8-Fc-Prg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VxF-uV-M6w" firstAttribute="leading" secondItem="2i8-Fc-Prg" secondAttribute="leading" id="06u-jP-ZNC"/>
+                            <constraint firstItem="VxF-uV-M6w" firstAttribute="centerX" secondItem="FYG-KK-NRb" secondAttribute="centerX" id="5nu-hK-YIG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="VxF-uV-M6w" secondAttribute="bottom" constant="-34" id="A8Z-Cy-fON"/>
+                            <constraint firstItem="VxF-uV-M6w" firstAttribute="top" secondItem="2i8-Fc-Prg" secondAttribute="top" id="fko-1K-TtH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Games" largeTitleDisplayMode="always" id="zY3-dr-xeB"/>
+                    <connections>
+                        <outlet property="gamesTableView" destination="VxF-uV-M6w" id="HWN-hi-g1U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tc-Fv-ydD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1441" y="192"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="AnM-Zo-Wf7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LMW-Te-yie" customClass="rootViewController" customModule="MCChin" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v47-ez-PtY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.83921568629999999" blue="0.17663006980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="D1A-XN-gxR" kind="relationship" relationship="rootViewController" id="NnQ-8i-JAn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="67X-k6-ma9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2472" y="192"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

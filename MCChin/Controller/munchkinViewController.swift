@@ -20,8 +20,6 @@ class munchkinViewController: UIViewController, UITableViewDataSource, UITableVi
                       .hideKeyboardWhenTappedAround()
        }
     
-    var munchkinPlayers: [String] = [""]
-    
     //Создание Table View
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return munchkinPlayers.count
@@ -72,17 +70,3 @@ class munchkinViewController: UIViewController, UITableViewDataSource, UITableVi
 
 
 // MARK: EXTENSIONS
-
-    // ЧТОБЫ УБИРАЛАСЬ КЛАВИАТУРА ПО НАЖАТИЮ
-    extension UIViewController {
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
-
-}

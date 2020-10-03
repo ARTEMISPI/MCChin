@@ -14,7 +14,7 @@
 		63A18F2524B142AA00572A87 /* mafiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A18F2424B142AA00572A87 /* mafiaViewController.swift */; };
 		63A18F2724B1431300572A87 /* rootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A18F2624B1431300572A87 /* rootViewController.swift */; };
 		63D7FC8924D71509001E81DC /* gamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7FC8824D71509001E81DC /* gamesTableViewCell.swift */; };
-		63F960A924F8381C00B1AB66 /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F960A824F8381C00B1AB66 /* Players.swift */; };
+		63E6AD792527847C00F33C0B /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E6AD782527847C00F33C0B /* Logic.swift */; };
 		63FDD7AB2450F6780073AAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD7AA2450F6780073AAE5 /* AppDelegate.swift */; };
 		63FDD7AD2450F6780073AAE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD7AC2450F6780073AAE5 /* SceneDelegate.swift */; };
 		63FDD7AF2450F6780073AAE5 /* gamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD7AE2450F6780073AAE5 /* gamesViewController.swift */; };
@@ -32,7 +32,7 @@
 		63A18F2424B142AA00572A87 /* mafiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mafiaViewController.swift; sourceTree = "<group>"; };
 		63A18F2624B1431300572A87 /* rootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rootViewController.swift; sourceTree = "<group>"; };
 		63D7FC8824D71509001E81DC /* gamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gamesTableViewCell.swift; sourceTree = "<group>"; };
-		63F960A824F8381C00B1AB66 /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
+		63E6AD782527847C00F33C0B /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
 		63FDD7A72450F6780073AAE5 /* MCChin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCChin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FDD7AA2450F6780073AAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63FDD7AC2450F6780073AAE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				63A18F2224B1420000572A87 /* Database.swift */,
-				63F960A824F8381C00B1AB66 /* Players.swift */,
+				63E6AD782527847C00F33C0B /* Logic.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,8 +118,8 @@
 		63FDD7A92450F6780073AAE5 /* MCChin */ = {
 			isa = PBXGroup;
 			children = (
-				63F521B124B2322000314951 /* View */,
 				63F521B024B2318D00314951 /* Resources */,
+				63F521B124B2322000314951 /* View */,
 				63F521AE24B1488A00314951 /* Controller */,
 				63F521AC24B1487500314951 /* Model */,
 				63FDD7B82450F67D0073AAE5 /* Info.plist */,
@@ -267,8 +267,8 @@
 				63A18F2524B142AA00572A87 /* mafiaViewController.swift in Sources */,
 				63D7FC8924D71509001E81DC /* gamesTableViewCell.swift in Sources */,
 				63A18F2724B1431300572A87 /* rootViewController.swift in Sources */,
-				63F960A924F8381C00B1AB66 /* Players.swift in Sources */,
 				63A18F2124B141F000572A87 /* monopolyViewController.swift in Sources */,
+				63E6AD792527847C00F33C0B /* Logic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
