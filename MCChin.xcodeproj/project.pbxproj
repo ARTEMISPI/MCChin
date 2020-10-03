@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		55934744A53933992DCA7DE2 /* Pods_MCChin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60976229BFFE43FF96380230 /* Pods_MCChin.framework */; };
-		6340A296249D393F0082C99B /* MunchkinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340A295249D393F0082C99B /* MunchkinViewController.swift */; };
-		63A18F2124B141F000572A87 /* MonopolyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A18F2024B141F000572A87 /* MonopolyViewController.swift */; };
-		63A18F2324B1420000572A87 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A18F2224B1420000572A87 /* Model.swift */; };
-		63A18F2524B142AA00572A87 /* MafiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A18F2424B142AA00572A87 /* MafiaViewController.swift */; };
-		63A18F2724B1431300572A87 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A18F2624B1431300572A87 /* RootViewController.swift */; };
+		6340A296249D393F0082C99B /* munchkinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340A295249D393F0082C99B /* munchkinViewController.swift */; };
+		63A18F2124B141F000572A87 /* monopolyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A18F2024B141F000572A87 /* monopolyViewController.swift */; };
+		63A18F2324B1420000572A87 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A18F2224B1420000572A87 /* Database.swift */; };
+		63A18F2524B142AA00572A87 /* mafiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A18F2424B142AA00572A87 /* mafiaViewController.swift */; };
+		63A18F2724B1431300572A87 /* rootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A18F2624B1431300572A87 /* rootViewController.swift */; };
+		63D7FC8924D71509001E81DC /* gamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7FC8824D71509001E81DC /* gamesTableViewCell.swift */; };
+		63E6AD792527847C00F33C0B /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E6AD782527847C00F33C0B /* Logic.swift */; };
 		63FDD7AB2450F6780073AAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD7AA2450F6780073AAE5 /* AppDelegate.swift */; };
 		63FDD7AD2450F6780073AAE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD7AC2450F6780073AAE5 /* SceneDelegate.swift */; };
-		63FDD7AF2450F6780073AAE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD7AE2450F6780073AAE5 /* ViewController.swift */; };
+		63FDD7AF2450F6780073AAE5 /* gamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD7AE2450F6780073AAE5 /* gamesViewController.swift */; };
 		63FDD7B22450F6780073AAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FDD7B02450F6780073AAE5 /* Main.storyboard */; };
 		63FDD7B42450F67D0073AAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FDD7B32450F67D0073AAE5 /* Assets.xcassets */; };
 		63FDD7B72450F67D0073AAE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FDD7B52450F67D0073AAE5 /* LaunchScreen.storyboard */; };
@@ -24,15 +26,17 @@
 /* Begin PBXFileReference section */
 		2A979EBA9D2572DEC0490459 /* Pods-MCChin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCChin.debug.xcconfig"; path = "Target Support Files/Pods-MCChin/Pods-MCChin.debug.xcconfig"; sourceTree = "<group>"; };
 		60976229BFFE43FF96380230 /* Pods_MCChin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCChin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6340A295249D393F0082C99B /* MunchkinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunchkinViewController.swift; sourceTree = "<group>"; };
-		63A18F2024B141F000572A87 /* MonopolyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonopolyViewController.swift; sourceTree = "<group>"; };
-		63A18F2224B1420000572A87 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		63A18F2424B142AA00572A87 /* MafiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MafiaViewController.swift; sourceTree = "<group>"; };
-		63A18F2624B1431300572A87 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		6340A295249D393F0082C99B /* munchkinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = munchkinViewController.swift; sourceTree = "<group>"; };
+		63A18F2024B141F000572A87 /* monopolyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monopolyViewController.swift; sourceTree = "<group>"; };
+		63A18F2224B1420000572A87 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		63A18F2424B142AA00572A87 /* mafiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mafiaViewController.swift; sourceTree = "<group>"; };
+		63A18F2624B1431300572A87 /* rootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rootViewController.swift; sourceTree = "<group>"; };
+		63D7FC8824D71509001E81DC /* gamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gamesTableViewCell.swift; sourceTree = "<group>"; };
+		63E6AD782527847C00F33C0B /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
 		63FDD7A72450F6780073AAE5 /* MCChin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCChin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FDD7AA2450F6780073AAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63FDD7AC2450F6780073AAE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63FDD7AE2450F6780073AAE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63FDD7AE2450F6780073AAE5 /* gamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gamesViewController.swift; sourceTree = "<group>"; };
 		63FDD7B12450F6780073AAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63FDD7B32450F67D0073AAE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63FDD7B62450F67D0073AAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,26 +59,21 @@
 		63F521AC24B1487500314951 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				63A18F2224B1420000572A87 /* Model.swift */,
+				63A18F2224B1420000572A87 /* Database.swift */,
+				63E6AD782527847C00F33C0B /* Logic.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		63F521AD24B1488300314951 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		63F521AE24B1488A00314951 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				63FDD7AE2450F6780073AAE5 /* ViewController.swift */,
-				6340A295249D393F0082C99B /* MunchkinViewController.swift */,
-				63A18F2024B141F000572A87 /* MonopolyViewController.swift */,
-				63A18F2424B142AA00572A87 /* MafiaViewController.swift */,
-				63A18F2624B1431300572A87 /* RootViewController.swift */,
+				63A18F2624B1431300572A87 /* rootViewController.swift */,
+				63FDD7AE2450F6780073AAE5 /* gamesViewController.swift */,
+				63D7FC8824D71509001E81DC /* gamesTableViewCell.swift */,
+				6340A295249D393F0082C99B /* munchkinViewController.swift */,
+				63A18F2024B141F000572A87 /* monopolyViewController.swift */,
+				63A18F2424B142AA00572A87 /* mafiaViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -89,13 +88,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		63F521B124B2322000314951 /* Storyboard */ = {
+		63F521B124B2322000314951 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				63FDD7B02450F6780073AAE5 /* Main.storyboard */,
 				63FDD7B52450F67D0073AAE5 /* LaunchScreen.storyboard */,
 			);
-			path = Storyboard;
+			path = View;
 			sourceTree = "<group>";
 		};
 		63FDD79E2450F6780073AAE5 = {
@@ -119,10 +118,9 @@
 		63FDD7A92450F6780073AAE5 /* MCChin */ = {
 			isa = PBXGroup;
 			children = (
-				63F521B124B2322000314951 /* Storyboard */,
 				63F521B024B2318D00314951 /* Resources */,
+				63F521B124B2322000314951 /* View */,
 				63F521AE24B1488A00314951 /* Controller */,
-				63F521AD24B1488300314951 /* View */,
 				63F521AC24B1487500314951 /* Model */,
 				63FDD7B82450F67D0073AAE5 /* Info.plist */,
 			);
@@ -175,7 +173,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "PAPUNIDIS DEVELOPMENT";
 				TargetAttributes = {
 					63FDD7A62450F6780073AAE5 = {
@@ -261,14 +259,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63FDD7AF2450F6780073AAE5 /* ViewController.swift in Sources */,
+				63FDD7AF2450F6780073AAE5 /* gamesViewController.swift in Sources */,
 				63FDD7AB2450F6780073AAE5 /* AppDelegate.swift in Sources */,
 				63FDD7AD2450F6780073AAE5 /* SceneDelegate.swift in Sources */,
-				63A18F2324B1420000572A87 /* Model.swift in Sources */,
-				6340A296249D393F0082C99B /* MunchkinViewController.swift in Sources */,
-				63A18F2524B142AA00572A87 /* MafiaViewController.swift in Sources */,
-				63A18F2724B1431300572A87 /* RootViewController.swift in Sources */,
-				63A18F2124B141F000572A87 /* MonopolyViewController.swift in Sources */,
+				63A18F2324B1420000572A87 /* Database.swift in Sources */,
+				6340A296249D393F0082C99B /* munchkinViewController.swift in Sources */,
+				63A18F2524B142AA00572A87 /* mafiaViewController.swift in Sources */,
+				63D7FC8924D71509001E81DC /* gamesTableViewCell.swift in Sources */,
+				63A18F2724B1431300572A87 /* rootViewController.swift in Sources */,
+				63A18F2124B141F000572A87 /* monopolyViewController.swift in Sources */,
+				63E6AD792527847C00F33C0B /* Logic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +320,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -344,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -380,6 +381,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -398,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

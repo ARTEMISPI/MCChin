@@ -1,5 +1,5 @@
 //
-//  MonopolyViewController.swift
+//  monopolyViewController.swift
 //  MCChin
 //
 //  Created by Artemis Papunidis on 7/5/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MonopolyViewController: UIViewController {
+class monopolyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 //
-//  MafiaViewController.swift
+//  rootViewController.swift
 //  MCChin
 //
 //  Created by Artemis Papunidis on 7/5/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MafiaViewController: UIViewController {
+class rootViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
