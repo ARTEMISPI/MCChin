@@ -22,8 +22,8 @@ class gamesTableViewCell: UITableViewCell {
     }
 
 //MARK: CONNECTIONS
-    @IBOutlet weak var gamesMunchkinPhoto: UIImageView!
-    @IBAction func gamesMunchkinButton(_ sender: UIButton) {
+    @IBOutlet weak var gamesPhoto: UIImageView!
+    @IBAction func gamesButton(_ sender: UIButton) {
     }
     
 }

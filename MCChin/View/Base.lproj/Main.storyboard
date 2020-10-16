@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LMW-Te-yie">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FWZ-ds-BSz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -17,8 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c6u-FA-3cj">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c6u-FA-3cj">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="gamesVar" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="50" id="sgT-73-vbT">
@@ -28,58 +29,38 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="munchkinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Mgd-dv-1w1">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="munchkinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Mgd-dv-1w1">
                                                     <rect key="frame" x="20" y="4" width="52" height="42"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="52" id="FqD-ia-QKz"/>
-                                                    </constraints>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYq-3P-cnM">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYq-3P-cnM">
                                                     <rect key="frame" x="80" y="4" width="160" height="42"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="160" id="w6d-dm-dOu"/>
-                                                    </constraints>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Munchkin">
                                                         <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="gamesMunchkinButton:" destination="sgT-73-vbT" eventType="touchUpInside" id="yRK-Cv-qPQ"/>
                                                         <segue destination="NnT-tf-8y6" kind="show" id="62T-GY-ei6"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="cYq-3P-cnM" firstAttribute="bottom" secondItem="Mgd-dv-1w1" secondAttribute="bottom" id="38P-kl-s0s"/>
-                                                <constraint firstItem="Mgd-dv-1w1" firstAttribute="top" secondItem="f4Q-nP-OUy" secondAttribute="topMargin" constant="-7" id="Ynv-ec-CHC"/>
-                                                <constraint firstItem="Mgd-dv-1w1" firstAttribute="leading" secondItem="f4Q-nP-OUy" secondAttribute="leadingMargin" id="aAG-Jr-Bzy"/>
-                                                <constraint firstItem="Mgd-dv-1w1" firstAttribute="centerY" secondItem="f4Q-nP-OUy" secondAttribute="centerY" id="bkw-ju-OqP"/>
-                                                <constraint firstItem="cYq-3P-cnM" firstAttribute="top" secondItem="Mgd-dv-1w1" secondAttribute="top" id="lt4-LK-ZWL"/>
-                                                <constraint firstItem="cYq-3P-cnM" firstAttribute="leading" secondItem="Mgd-dv-1w1" secondAttribute="trailing" constant="8" id="vLK-Qb-ffy"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="gamesVar"/>
-                                        <connections>
-                                            <outlet property="gamesMunchkinPhoto" destination="Mgd-dv-1w1" id="oYK-hd-pPj"/>
-                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="monCell" rowHeight="50" id="uiZ-NF-ora">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" rowHeight="50" id="uiZ-NF-ora">
                                         <rect key="frame" x="0.0" y="78" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uiZ-NF-ora" id="Qs3-XC-0kh">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monopolyIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7id-DB-XOF">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monopolyIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7id-DB-XOF">
                                                     <rect key="frame" x="20" y="4" width="52" height="42"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="52" id="4pb-fn-6WV"/>
-                                                    </constraints>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meu-ph-bAP">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meu-ph-bAP">
                                                     <rect key="frame" x="80" y="4" width="160" height="42"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="160" id="fjr-vS-I4l"/>
-                                                    </constraints>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Monopoly">
                                                         <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
@@ -88,34 +69,22 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="meu-ph-bAP" firstAttribute="leading" secondItem="7id-DB-XOF" secondAttribute="trailing" constant="8" id="4Gt-aL-Y5t"/>
-                                                <constraint firstItem="7id-DB-XOF" firstAttribute="top" secondItem="Qs3-XC-0kh" secondAttribute="topMargin" constant="-7" id="FM7-RG-ksF"/>
-                                                <constraint firstItem="7id-DB-XOF" firstAttribute="centerY" secondItem="Qs3-XC-0kh" secondAttribute="centerY" id="RE9-rr-Y2d"/>
-                                                <constraint firstItem="7id-DB-XOF" firstAttribute="leading" secondItem="Qs3-XC-0kh" secondAttribute="leadingMargin" id="bK1-6W-GGn"/>
-                                                <constraint firstItem="meu-ph-bAP" firstAttribute="bottom" secondItem="7id-DB-XOF" secondAttribute="bottom" id="ckK-Rb-dQJ"/>
-                                                <constraint firstItem="meu-ph-bAP" firstAttribute="top" secondItem="7id-DB-XOF" secondAttribute="top" id="iqL-o1-R9Q"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mafCell" rowHeight="50" id="fbh-ic-D36">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell3" rowHeight="50" id="fbh-ic-D36">
                                         <rect key="frame" x="0.0" y="128" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fbh-ic-D36" id="hBl-rh-A6Q">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="munchkinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gum-oP-7mL">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="munchkinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gum-oP-7mL">
                                                     <rect key="frame" x="20" y="4" width="52" height="42"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="52" id="qGp-Ko-sOJ"/>
-                                                    </constraints>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQX-Ni-tAo">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQX-Ni-tAo">
                                                     <rect key="frame" x="80" y="4" width="160" height="42"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="160" id="lHP-9z-JrD"/>
-                                                    </constraints>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Mafia">
                                                         <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
@@ -124,32 +93,22 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="gum-oP-7mL" firstAttribute="centerY" secondItem="hBl-rh-A6Q" secondAttribute="centerY" id="FIa-2b-tLT"/>
-                                                <constraint firstItem="uQX-Ni-tAo" firstAttribute="top" secondItem="gum-oP-7mL" secondAttribute="top" id="HOP-ln-TFQ"/>
-                                                <constraint firstItem="gum-oP-7mL" firstAttribute="top" secondItem="hBl-rh-A6Q" secondAttribute="topMargin" constant="-7" id="Ie2-UB-8dr"/>
-                                                <constraint firstItem="uQX-Ni-tAo" firstAttribute="bottom" secondItem="gum-oP-7mL" secondAttribute="bottom" id="cVl-V3-r8A"/>
-                                                <constraint firstItem="gum-oP-7mL" firstAttribute="leading" secondItem="hBl-rh-A6Q" secondAttribute="leadingMargin" id="hkh-Tr-LBt"/>
-                                                <constraint firstItem="uQX-Ni-tAo" firstAttribute="leading" secondItem="gum-oP-7mL" secondAttribute="trailing" constant="8" id="ujB-Ik-bq7"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="LDF-vq-Taw" id="mH8-Gx-7dM"/>
+                                    <outlet property="delegate" destination="LDF-vq-Taw" id="UVG-eA-Gg6"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rzq-T5-yiE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="c6u-FA-3cj" firstAttribute="top" secondItem="rzq-T5-yiE" secondAttribute="top" id="OIg-4A-eiM"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="c6u-FA-3cj" secondAttribute="bottom" constant="-34" id="YeB-k2-Tnb"/>
-                            <constraint firstItem="c6u-FA-3cj" firstAttribute="leading" secondItem="rzq-T5-yiE" secondAttribute="leading" id="e2h-JV-fsD"/>
-                            <constraint firstItem="c6u-FA-3cj" firstAttribute="centerX" secondItem="y1r-aN-8IW" secondAttribute="centerX" id="rGp-Gd-N2h"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Games" largeTitleDisplayMode="always" id="dvD-9d-kDc"/>
                     <connections>
-                        <outlet property="gamesTableView" destination="c6u-FA-3cj" id="bXP-JV-GP3"/>
+                        <outlet property="gamesTableView" destination="c6u-FA-3cj" id="NVA-b6-OZr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Rr-B8-udL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -304,99 +263,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5N-NR-eJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-336" y="167"/>
-        </scene>
-        <!--Games-->
-        <scene sceneID="cSz-rO-4YQ">
-            <objects>
-                <viewController id="D1A-XN-gxR" customClass="gamesViewController" customModule="MCChin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FYG-KK-NRb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VxF-uV-M6w">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="gamesVar" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="50" id="EbD-Ue-iFu" customClass="gamesTableViewCell" customModule="MCChin" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EbD-Ue-iFu" id="KQF-qr-Xeq">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="munchkinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="jAi-Zn-gh3">
-                                                    <rect key="frame" x="20" y="4" width="52" height="42"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="52" id="sYw-14-SOm"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKb-kS-Sw2">
-                                                    <rect key="frame" x="80" y="4" width="160" height="42"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="160" id="XCx-a2-Bm5"/>
-                                                    </constraints>
-                                                    <state key="normal" title="Munchkin">
-                                                        <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="gamesMunchkinButton:" destination="EbD-Ue-iFu" eventType="touchUpInside" id="wir-eC-xff"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="ZKb-kS-Sw2" firstAttribute="top" secondItem="jAi-Zn-gh3" secondAttribute="top" id="M5z-a4-Lwy"/>
-                                                <constraint firstItem="jAi-Zn-gh3" firstAttribute="top" secondItem="KQF-qr-Xeq" secondAttribute="topMargin" constant="-7" id="Qae-7l-jT2"/>
-                                                <constraint firstItem="ZKb-kS-Sw2" firstAttribute="bottom" secondItem="jAi-Zn-gh3" secondAttribute="bottom" id="ZmM-0r-GfT"/>
-                                                <constraint firstItem="jAi-Zn-gh3" firstAttribute="centerY" secondItem="KQF-qr-Xeq" secondAttribute="centerY" id="nB4-Pb-1EZ"/>
-                                                <constraint firstItem="jAi-Zn-gh3" firstAttribute="leading" secondItem="KQF-qr-Xeq" secondAttribute="leadingMargin" id="rhu-yZ-UPl"/>
-                                                <constraint firstItem="ZKb-kS-Sw2" firstAttribute="leading" secondItem="jAi-Zn-gh3" secondAttribute="trailing" constant="8" id="xEI-lK-AM2"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <accessibility key="accessibilityConfiguration" identifier="gamesVar"/>
-                                        <connections>
-                                            <outlet property="gamesMunchkinPhoto" destination="jAi-Zn-gh3" id="Hah-qV-6cA"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="2i8-Fc-Prg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="VxF-uV-M6w" firstAttribute="leading" secondItem="2i8-Fc-Prg" secondAttribute="leading" id="06u-jP-ZNC"/>
-                            <constraint firstItem="VxF-uV-M6w" firstAttribute="centerX" secondItem="FYG-KK-NRb" secondAttribute="centerX" id="5nu-hK-YIG"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="VxF-uV-M6w" secondAttribute="bottom" constant="-34" id="A8Z-Cy-fON"/>
-                            <constraint firstItem="VxF-uV-M6w" firstAttribute="top" secondItem="2i8-Fc-Prg" secondAttribute="top" id="fko-1K-TtH"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Games" largeTitleDisplayMode="always" id="zY3-dr-xeB"/>
-                    <connections>
-                        <outlet property="gamesTableView" destination="VxF-uV-M6w" id="HWN-hi-g1U"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5tc-Fv-ydD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1441" y="192"/>
-        </scene>
-        <!--Root View Controller-->
-        <scene sceneID="AnM-Zo-Wf7">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LMW-Te-yie" customClass="rootViewController" customModule="MCChin" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v47-ez-PtY">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="0.83921568629999999" blue="0.17663006980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="D1A-XN-gxR" kind="relationship" relationship="rootViewController" id="NnQ-8i-JAn"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="67X-k6-ma9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2472" y="192"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
