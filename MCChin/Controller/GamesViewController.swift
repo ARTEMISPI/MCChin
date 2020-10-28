@@ -1,5 +1,5 @@
 //
-//  gamesViewController.swift
+//  GamesViewController.swift
 //  MCChin
 //
 //  Created by Artemis Papunidis on 4/23/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class gamesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class GamesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     //MARK: INITIALIZATION
     override func viewDidLoad() {

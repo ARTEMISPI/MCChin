@@ -1,5 +1,5 @@
 //
-//  rootViewController.swift
+//  RootViewController.swift
 //  MCChin
 //
 //  Created by Artemis Papunidis on 7/5/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class rootViewController: UINavigationController {
+class RootViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

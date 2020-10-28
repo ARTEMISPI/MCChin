@@ -1,5 +1,5 @@
 //
-//  monopolyViewController.swift
+//  MafiaViewController.swift
 //  MCChin
 //
 //  Created by Artemis Papunidis on 7/5/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class monopolyViewController: UIViewController {
+class MafiaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

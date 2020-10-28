@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +12,7 @@
         <!--Games-->
         <scene sceneID="a2C-gh-kmK">
             <objects>
-                <viewController id="LDF-vq-Taw" customClass="gamesViewController" customModule="MCChin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LDF-vq-Taw" customClass="GamesViewController" customModule="MCChin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y1r-aN-8IW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,7 +118,7 @@
         <!--Munchkin-->
         <scene sceneID="pHF-vR-MEe">
             <objects>
-                <viewController id="NnT-tf-8y6" customClass="munchkinViewController" customModule="MCChin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NnT-tf-8y6" customClass="MunchkinViewController" customModule="MCChin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="agZ-WG-hsM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,7 +173,7 @@
         <!--Mafia-->
         <scene sceneID="ntJ-GB-jl6">
             <objects>
-                <viewController id="tAH-oO-DWJ" customClass="mafiaViewController" customModule="MCChin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tAH-oO-DWJ" customClass="MafiaViewController" customModule="MCChin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1oD-ol-FS3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,7 +208,7 @@
         <!--Monopoly-->
         <scene sceneID="ogH-eJ-3Qa">
             <objects>
-                <viewController id="jJ0-GE-69h" customClass="monopolyViewController" customModule="MCChin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jJ0-GE-69h" customClass="MonopolyViewController" customModule="MCChin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E2Z-Mf-bUZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -243,12 +243,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YLN-CV-TFI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="695.6521739130435" y="924.77678571428567"/>
+            <point key="canvasLocation" x="696" y="925"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="DMl-FU-PJL">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FWZ-ds-BSz" customClass="rootViewController" customModule="MCChin" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FWZ-ds-BSz" customClass="RootViewController" customModule="MCChin" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hRW-vA-yrR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

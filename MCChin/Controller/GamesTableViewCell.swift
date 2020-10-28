@@ -1,5 +1,5 @@
 //
-//  gamesTableViewCell.swift
+//  GamesTableViewCell.swift
 //  MCChin
 //
 //  Created by Artemis Papunidis on 8/2/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class gamesTableViewCell: UITableViewCell {
+class GamesTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

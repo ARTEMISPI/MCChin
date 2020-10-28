@@ -1,5 +1,5 @@
 //
-//  munchkinViewController.swift
+//  MunchkinViewController.swift
 //  MCChin
 //
 //  Created by Artemis Papunidis on 6/19/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class munchkinViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MunchkinViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
  //MARK: INITIALIZATION
