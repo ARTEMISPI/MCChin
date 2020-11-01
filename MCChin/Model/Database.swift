@@ -9,7 +9,13 @@
 import Foundation
 import RealmSwift
 
-var gamesVariables: [String] = ["Munchkin, Monopoly, Mafia"]
+struct Games {
+    let a = "Munchkin"
+    let b = "Monopoly"
+    let c = "Mafia"
+}
+
+//var gamesVariables: [String] = ["Munchkin, Monopoly, Mafia"]
 
 var munchkinPlayers: [String] = [""]
 

@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct ipv6 {
+//struct ipv6 {
 //    let Data: NSData
 //    let Interface: NSXPCInterface
-    init? (Data, NWInterface?)
-}
+//    init? (Data, NWInterface?)
+//}

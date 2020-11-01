@@ -22,12 +22,12 @@ class GamesViewController: UIViewController, UITableViewDataSource, UITableViewD
 //    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return gamesVariables.count
+        return Games.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let gamesCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        gamesCell.textLabel?.text = gamesVariables[indexPath.row]
+        gamesCell.textLabel?.text = Games[indexPath.row]
         return gamesCell
     }
     
