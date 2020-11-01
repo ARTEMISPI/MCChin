@@ -17,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c6u-FA-3cj">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c6u-FA-3cj">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="gamesVar" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="50" id="sgT-73-vbT">
@@ -29,13 +28,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="munchkinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Mgd-dv-1w1">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="munchkinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Mgd-dv-1w1">
                                                     <rect key="frame" x="20" y="4" width="52" height="42"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="52" id="Asu-cP-u9f"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYq-3P-cnM">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYq-3P-cnM">
                                                     <rect key="frame" x="80" y="4" width="160" height="42"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="160" id="VWs-c6-ChK"/>
+                                                    </constraints>
                                                     <state key="normal" title="Munchkin">
                                                         <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
@@ -44,6 +47,14 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cYq-3P-cnM" firstAttribute="leading" secondItem="Mgd-dv-1w1" secondAttribute="trailing" constant="8" id="4gc-yc-oXW"/>
+                                                <constraint firstItem="Mgd-dv-1w1" firstAttribute="top" secondItem="f4Q-nP-OUy" secondAttribute="topMargin" constant="-7" id="6if-Ev-g7T"/>
+                                                <constraint firstItem="Mgd-dv-1w1" firstAttribute="top" secondItem="cYq-3P-cnM" secondAttribute="top" id="6nf-3k-png"/>
+                                                <constraint firstItem="Mgd-dv-1w1" firstAttribute="centerY" secondItem="f4Q-nP-OUy" secondAttribute="centerY" id="hoM-u3-qD3"/>
+                                                <constraint firstItem="Mgd-dv-1w1" firstAttribute="bottom" secondItem="cYq-3P-cnM" secondAttribute="bottom" id="lpR-BU-u80"/>
+                                                <constraint firstItem="Mgd-dv-1w1" firstAttribute="leading" secondItem="f4Q-nP-OUy" secondAttribute="leadingMargin" id="r2N-64-H17"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="gamesVar"/>
                                     </tableViewCell>
@@ -54,13 +65,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monopolyIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7id-DB-XOF">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monopolyIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7id-DB-XOF">
                                                     <rect key="frame" x="20" y="4" width="52" height="42"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="52" id="dJQ-Dz-Jhv"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meu-ph-bAP">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meu-ph-bAP">
                                                     <rect key="frame" x="80" y="4" width="160" height="42"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="160" id="jQF-pd-s8h"/>
+                                                    </constraints>
                                                     <state key="normal" title="Monopoly">
                                                         <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
@@ -69,6 +84,14 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="meu-ph-bAP" firstAttribute="leading" secondItem="7id-DB-XOF" secondAttribute="trailing" constant="8" id="7yD-CH-fjZ"/>
+                                                <constraint firstItem="7id-DB-XOF" firstAttribute="bottom" secondItem="meu-ph-bAP" secondAttribute="bottom" id="CSU-b2-w3P"/>
+                                                <constraint firstItem="7id-DB-XOF" firstAttribute="leading" secondItem="Qs3-XC-0kh" secondAttribute="leadingMargin" id="FEf-JC-qly"/>
+                                                <constraint firstItem="7id-DB-XOF" firstAttribute="top" secondItem="meu-ph-bAP" secondAttribute="top" id="b60-Bo-pXI"/>
+                                                <constraint firstItem="7id-DB-XOF" firstAttribute="centerY" secondItem="Qs3-XC-0kh" secondAttribute="centerY" id="o16-h1-nzg"/>
+                                                <constraint firstItem="7id-DB-XOF" firstAttribute="top" secondItem="Qs3-XC-0kh" secondAttribute="topMargin" constant="-7" id="pH6-fG-FRX"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell3" rowHeight="50" id="fbh-ic-D36">
@@ -78,13 +101,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="munchkinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gum-oP-7mL">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="munchkinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gum-oP-7mL">
                                                     <rect key="frame" x="20" y="4" width="52" height="42"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="52" id="4x6-6w-PPe"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQX-Ni-tAo">
-                                                    <rect key="frame" x="80" y="4" width="160" height="42"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQX-Ni-tAo">
+                                                    <rect key="frame" x="80" y="4" width="150" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="gxx-qG-G7C"/>
+                                                    </constraints>
                                                     <state key="normal" title="Mafia">
                                                         <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
@@ -93,6 +120,14 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gum-oP-7mL" firstAttribute="leading" secondItem="hBl-rh-A6Q" secondAttribute="leadingMargin" id="EyU-f7-nEr"/>
+                                                <constraint firstItem="gum-oP-7mL" firstAttribute="centerY" secondItem="hBl-rh-A6Q" secondAttribute="centerY" id="WDf-X1-sRH"/>
+                                                <constraint firstItem="gum-oP-7mL" firstAttribute="bottom" secondItem="uQX-Ni-tAo" secondAttribute="bottom" id="bXu-Cy-FTs"/>
+                                                <constraint firstItem="gum-oP-7mL" firstAttribute="top" secondItem="uQX-Ni-tAo" secondAttribute="top" id="d4g-TS-CK1"/>
+                                                <constraint firstItem="uQX-Ni-tAo" firstAttribute="leading" secondItem="gum-oP-7mL" secondAttribute="trailing" constant="8" id="r7o-Xi-QmY"/>
+                                                <constraint firstItem="gum-oP-7mL" firstAttribute="top" secondItem="hBl-rh-A6Q" secondAttribute="topMargin" constant="-7" id="rOP-gx-K7q"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -105,6 +140,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rzq-T5-yiE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c6u-FA-3cj" firstAttribute="leading" secondItem="rzq-T5-yiE" secondAttribute="leading" id="Bgh-vU-Sex"/>
+                            <constraint firstItem="c6u-FA-3cj" firstAttribute="centerX" secondItem="y1r-aN-8IW" secondAttribute="centerX" id="HCo-VN-4Co"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="c6u-FA-3cj" secondAttribute="bottom" constant="-34" id="MEI-bm-Uyr"/>
+                            <constraint firstItem="c6u-FA-3cj" firstAttribute="top" secondItem="rzq-T5-yiE" secondAttribute="top" id="NPS-oL-PcQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Games" largeTitleDisplayMode="always" id="dvD-9d-kDc"/>
                     <connections>
